@@ -6,6 +6,6 @@ install:
     - docker build -t pascalgrimaud/hello:travis .
     - docker images
 script:
-    - docker run --rm -it -p 8080:80 pascalgrimaud/hello
+    - docker run --rm -it -p 8080:80 pascalgrimaud/hello:travis
     - docker ps -a
     - curl -i http://localhost:8080
