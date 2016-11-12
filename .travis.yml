@@ -1,0 +1,11 @@
+os:
+    - linux
+services:
+    - docker
+install:
+    - docker build -t pascalgrimaud/hello:travis .
+    - docker images
+script:
+    - docker run --rm -it -p 8080:80 pascalgrimaud/hello
+    - docker ps -a
+    - curl -i http://localhost:8080
