@@ -1,5 +1,7 @@
 # docker-hello
 
+[![Circle CI](https://circleci.com/gh/pascalgrimaud/docker-hello.svg?style=shield)](https://circleci.com/gh/pascalgrimaud/docker-hello)
+
 Simple Docker image to say Hello World!
 
 Docker image: https://hub.docker.com/r/pascalgrimaud/hello/

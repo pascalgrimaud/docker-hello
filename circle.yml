@@ -1,11 +1,12 @@
-os:
-    - linux
-services:
+machine:
+  services:
     - docker
-install:
+dependencies:
+  override:
+    - docker version
     - docker build -t pascalgrimaud/hello:travis .
-    - docker images
-script:
+test:
+  override:
     - docker run -d -p 8080:80 pascalgrimaud/hello:travis
     - docker ps -a
     - curl -i http://localhost:8080
