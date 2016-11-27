@@ -5,10 +5,16 @@
 
 Simple Docker image to say Hello World!
 
-Docker image: https://hub.docker.com/r/pascalgrimaud/hello/
+Pull the image: `docker pull pascalgrimaud/hello`
 
-Build the image: `docker run -t pascalgrimaud/hello .`
+Or, you can build the image:
 
-Or pull the image: `docker pull pascalgrimaud/hello`
+```
+git clone https://github.com/pascalgrimaud/hello.git
+cd hello
+docker build -t pascalgrimaud/hello .
+```
 
-Then, run the image: `docker run --rm -it -p 8080:80 pascalgrimaud/hello`
+Run the image directly: `docker run --rm -it -p 8080:80 pascalgrimaud/hello`
+
+Run the image with docker-compose:  `docker-compose up -d`

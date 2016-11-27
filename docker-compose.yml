@@ -1,0 +1,7 @@
+version: '2'
+services:
+    hello:
+        container_name: hello
+        image: pascalgrimaud/hello
+        ports:
+            - 8080:80
